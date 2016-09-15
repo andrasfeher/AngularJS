@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="app" ng-cloak>
+  <head>
+    <title>AngularJS Tutorial</title>
+    <style>
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div ng-controller="ctrl">
+
+      <div bb-player-list="bbPlayers" array-item="name | uppercase"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/application.js"></script>
+
+  </body>
+</html>
