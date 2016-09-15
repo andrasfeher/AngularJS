@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.angularjs.org/1.3.15/angular.min.js"></script>
+	<script src="js/myAppModule.js"></script>	
+</head>
+<body>
+
+	<div ng-app="myAppModule" ng-controller="MyController">
+		<input type="text" ng-model="person.name"></br>
+		<p>{{"Hello " + person.name + "!"}}</p>
+		
+		<ul>
+			<li ng-repeat="item in [1, 2, 3] track by $index">{{item}}<li>
+		</ul>
+	
+		<div ng-repeat="n in [42, 42, 43, 43] track by $index">
+		  {{n}}
+		</div>	
+	
+	</div>
+
+</body>
+</html>
+
+
+
